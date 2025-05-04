@@ -3,3 +3,212 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: rgba(120, 0, 0, 0.805); 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 100%;
+    width: 1024px;
+    max-width: 1024px;
+    min-width: 1024px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: sticky;
+    
+    
+    
+}
+
+#home{
+    width: 100px;
+    height: 25px;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    color: rgb(63, 181, 255);
+    background: rgb(83, 16, 10);
+    
+}
+
+#menu{
+    width: 100px;
+    height: 25px;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    background: rgb(83, 16, 10);
+    border-radius: 5px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    color: rgb(63, 181, 255);
+}
+
+#contact{
+    width: 100px;
+    height: 25px;
+    grid-row: 3;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    background: rgb(83, 16, 10);
+    border-radius: 5px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    color: rgb(63, 181, 255);
+}
+
+button:hover {
+    background-color: rgba(156, 46, 46, 0.753) !important;
+    cursor: pointer;
+}
+
+#content {
+    min-height: 100vh;
+    width: 600px;
+    grid-column: 2;
+    background-color: rgba(116, 121, 255, 0.805);
+    color: rgb(255, 255, 255);
+    border-radius: 20% 8% 20% 8%;
+}
+
+.home-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.home-description {
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+#menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    row-gap: 170px;
+    justify-items: center;
+    color: black;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 20% 20% 80% 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.glass-stem {
+    height: 60px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 120px;
+    left: 95px;
+    border-radius: 30%;
+    z-index: 0;
+
+}
+
+.glass-base {
+    width: 180px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.904);
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+    z-index: 2;
+    justify-self: center;
+}
+
+.menu-item-name {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.menu-item-description {
+    font-style: italic;
+    justify-self: center;
+    font-size: 1rem;
+    width: 75%;
+    margin-top: 2px;
+}
+
+.berry-smoothie {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    background-color: rgba(255, 0, 98, 0.575);
+    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    top: 240px;
+    right: 571px;
+    z-index: 5;
+}
+
+.tropical-smoothie {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    background-color: rgba(255, 217, 0, 0.716);
+    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    top: 240px;
+    right: 271px;
+    z-index: 5;
+}
+
+.green-smoothie {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    background-color: rgba(15, 174, 0, 0.729);
+    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    top: 750px;
+    right: 571px;
+    z-index: 5;
+}
+
+.chocolate-smoothie {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    background-color: rgba(137, 70, 26, 0.856);
+    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    top: 750px;
+    right: 271px;
+    z-index: 5;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2px;
+}
