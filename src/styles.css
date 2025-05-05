@@ -1,3 +1,4 @@
+/* general styles start */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,89 +10,119 @@ body {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 100%;
-    width: 1024px;
-    max-width: 1024px;
-    min-width: 1024px;
+    width: 1022px;
+    max-width: 1022px;
+    min-width: 1022px;
     position: relative;
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
 }
-
+#content {
+    min-height: 100vh;
+    width: 600px;
+    grid-column: 2;
+    background-color: rgba(116, 121, 255, 0.702);
+    color: rgb(255, 255, 255);
+    border-radius: 8% 8% 8% 8% / 8% 8% 8% 8%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.747);
+}
+/* general styles end */
+/* nav styles start */
 nav {
     display: grid;
     width: 100%;
-    height: 100px;
+    height: 200px;
     grid-column: 1;
     grid-row: 1;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     position: sticky;
-    
-    
-    
+
+}
+.nav-title {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: rgb(0, 247, 255);
+    text-shadow: 1px 1px 2px rgb(0, 200, 255);
+    font-weight: 300;
+    border-bottom: inset .5px;
 }
 
 #home{
     width: 100px;
-    height: 25px;
-    grid-row: 1;
+    height: 30px;
+    grid-row: 2;
     grid-column: 1;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
-    border: black 1px solid;
+    border: transparent;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
-    color: rgb(63, 181, 255);
+    color: rgb(22, 166, 255);
     background: rgb(83, 16, 10);
+    text-shadow: 1px 1px 1px rgb(0, 119, 255);
+    font-size: 1rem;
+    border-right: inset 2px;
+    
     
 }
 
 #menu{
     width: 100px;
-    height: 25px;
-    grid-row: 2;
-    grid-column: 1;
-    align-self: center;
-    justify-self: center;
-    background: rgb(83, 16, 10);
-    border-radius: 5px;
-    border: black 1px solid;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
-    color: rgb(63, 181, 255);
-}
-
-#contact{
-    width: 100px;
-    height: 25px;
+    height: 30px;
     grid-row: 3;
     grid-column: 1;
     align-self: center;
     justify-self: center;
     background: rgb(83, 16, 10);
     border-radius: 5px;
-    border: black 1px solid;
+    border: transparent;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
-    color: rgb(63, 181, 255);
+    color: rgb(22, 166, 255);
+    text-shadow: 1px 1px 1px rgb(0, 119, 255);
+    font-size: 1rem;
+    border-right: inset 2px;
 }
 
+#contact{
+    width: 100px;
+    height: 30px;
+    grid-row: 4;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    background: rgb(83, 16, 10);
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.747);
+    color: rgb(22, 166, 255);
+    text-shadow: 1px 1px 1px rgb(0, 119, 255);
+    font-size: 1rem;
+    border-right: inset 2px;
+}
+
+.active {
+    color: rgb(0, 247, 255) !important;
+    height: 50px !important;
+    font-size: 1.4rem !important;
+    box-shadow: 0px 0px 10px 1px rgba(75, 23, 23, 0.757) !important;
+}
 button:hover {
     background-color: rgba(156, 46, 46, 0.753) !important;
     cursor: pointer;
 }
+/* nav styles end */
 
-#content {
-    min-height: 100vh;
-    width: 600px;
-    grid-column: 2;
-    background-color: rgba(116, 121, 255, 0.805);
-    color: rgb(255, 255, 255);
-    border-radius: 20% 8% 20% 8%;
-}
-
+/* homepage styles start */
 .home-title {
     font-size: 4rem;
     text-align: center;
     font-weight: 300;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .home-description {
@@ -100,8 +131,10 @@ button:hover {
     font-size: 1rem;
     margin-top: 2px;
     margin-left: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-
+/* homepage styles end */
+/* menupage styles start */
 #menu-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,6 +155,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 40px;
     z-index: 2;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.747);
 }
 
 .glass-stem {
@@ -133,7 +167,7 @@ button:hover {
     left: 95px;
     border-radius: 30%;
     z-index: 0;
-
+    
 }
 
 .glass-base {
@@ -145,6 +179,7 @@ button:hover {
     top: 80px;
     z-index: 2;
     justify-self: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.747);
 }
 
 .menu-item-name {
@@ -152,6 +187,7 @@ button:hover {
     text-align: center;
     font-weight: 300;
     margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.801);
 }
 
 .menu-item-description {
@@ -160,39 +196,43 @@ button:hover {
     font-size: 1rem;
     width: 75%;
     margin-top: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.801);
 }
 
 .berry-smoothie {
     position: absolute;
     width: 180px;
     height: 140px;
-    background-color: rgba(255, 0, 98, 0.575);
-    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    background-color: rgba(255, 0, 102, 0.61);
+    border-radius: 1% 1% 60% 60% / 1% 1% 110% 110%;
     top: 240px;
     right: 571px;
     z-index: 5;
+    box-shadow: 0px 0px 5px 2px rgba(53, 8, 29, 0.404);
 }
 
 .tropical-smoothie {
     position: absolute;
     width: 180px;
     height: 140px;
-    background-color: rgba(255, 217, 0, 0.716);
-    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    background-color: rgba(255, 191, 0, 0.716);
+    border-radius: 1% 1% 60% 60% / 1% 1% 110% 110%;
     top: 240px;
     right: 271px;
     z-index: 5;
+    box-shadow: 0px 0px 5px 2px rgba(105, 74, 14, 0.353);
 }
 
 .green-smoothie {
     position: absolute;
     width: 180px;
     height: 140px;
-    background-color: rgba(15, 174, 0, 0.729);
-    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    background-color: rgba(14, 153, 1, 0.729);
+    border-radius: 1% 1% 60% 60% / 1% 1% 110% 110%;
     top: 750px;
     right: 571px;
     z-index: 5;
+    box-shadow: 0px 0px 5px 2px rgba(0, 80, 0, 0.404);
 }
 
 .chocolate-smoothie {
@@ -200,10 +240,11 @@ button:hover {
     width: 180px;
     height: 140px;
     background-color: rgba(137, 70, 26, 0.856);
-    border-radius: 1% 1% 60% 60% / 5% 5% 110% 110%;
+    border-radius: 1% 1% 60% 60% / 1% 1% 110% 110%;
     top: 750px;
     right: 271px;
     z-index: 5;
+    box-shadow: 0px 0px 5px 2px rgba(80, 11, 43, 0.404);
 }
 
 .menu-title {
@@ -211,4 +252,32 @@ button:hover {
     text-align: center;
     font-weight: 300;
     margin-top: 2px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
+/* menupage styles end */
+/* contactpage styles start */
+
+.contact-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    
+}
+
+.contact-description {
+    width: 50%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    border: 2px black double;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.747);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/* contactpage styles end */
