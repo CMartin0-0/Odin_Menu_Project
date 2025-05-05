@@ -4,7 +4,7 @@
 
 This is my solution to the Odin Project's [Restaurant Menu](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) project. The main goals of the project being practicing DOM manipulation by dynamically rendering a restaurant homepage and using JavaScript alone to generate the entire contents of the website.
 
-🔗 Live Demo: []()
+🔗 Live Demo: [https://cmartin0-0.github.io/Practice-Project--OdinProject_Restaurant_Menu/](https://cmartin0-0.github.io/Practice-Project--OdinProject_Restaurant_Menu/)
 
 ---
 
