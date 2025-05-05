@@ -6,7 +6,7 @@ This is my solution to the Odin Project's [Restaurant Menu](https://www.theodinp
 
 🔗 Live Demo: [https://cmartin0-0.github.io/Practice-Project--OdinProject_Restaurant_Menu/](https://cmartin0-0.github.io/Practice-Project--OdinProject_Restaurant_Menu/)
 
----
+
 
 ## 🛠️ Technologies Used
 
@@ -16,14 +16,14 @@ This is my solution to the Odin Project's [Restaurant Menu](https://www.theodinp
 * **CSS** – for styling the application
 * **GitHub Pages** - for hosting the project
 
----
+
 
 ##   Main Features
 
 * Tabbed browsing
 * DOM elements dynamically added/removed via JavaScript modules
 
----
+
 
 ## 📦 Installation
 
@@ -62,7 +62,6 @@ To run this project locally:
 
 
 
----
 
 ## ✅ Project Requirements
 
@@ -71,17 +70,10 @@ To run this project locally:
 3. Use the technique of importing JS modules to create tabbed browsing
 4. Deploy the project to gitHub pages
 
----
 
 ## 🎨 Design & Styling
 
 The application features a simple design, with more of a focus on the funcionality meant to be demonstrated.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
