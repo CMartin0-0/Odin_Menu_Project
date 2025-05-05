@@ -1,6 +1,6 @@
 
 
-# Restaurant Menu
+# OdinProject - Restaurant Menu
 
 This is my solution to the Odin Project's [Restaurant Menu](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) project. The main goals of the project being practicing DOM manipulation by dynamically rendering a restaurant homepage and using JavaScript alone to generate the entire contents of the website.
 
@@ -32,7 +32,7 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/CMartin0-0/fcc-25-5-clock.git
+   git clone https://github.com/CMartin0-0/Practice-Project--OdinProject_Restaurant_Menu.git
    ```
 
 
@@ -40,7 +40,7 @@ To run this project locally:
 2. Navigate into the project directory:
 
    ```bash
-   cd fcc-25-5-clock
+   cd Practice-Project--OdinProject_Restaurant_Menu
    ```
 
 
